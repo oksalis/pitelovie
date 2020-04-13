@@ -1,0 +1,56 @@
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to bottom, #ff8a8a 0%, #ca6e92 100%);
+}
+
+h1 {
+  font-size: 150px;
+  color: #fff;
+  font-family: "Belleza";
+  font-weight: normal;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+  width: 400px;
+  z-index: 2;
+  transform: rotate(54deg);
+  transform-origin: center center;
+  /* filter: drop-shadow(12px 5px 0px #ffffff);
+  -webkit-filter: drop-shadow(12px 5px 0px #ffffff);
+  -moz-filter: drop-shadow(12px 5px 0px #ffffff); */
+}
+
+.hruska {
+  min-width: 400px;
+  z-index: 1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.skac {
+  animation-name: skac;
+  animation-timing-function: ease;
+}
+@keyframes skac {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-70px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
